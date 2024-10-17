@@ -3,6 +3,7 @@
 // Execute `rustlings hint functions3` or use the `hint` watch subcommand for a
 // hint.
 
+// DONE
 
 fn main() {
     call_me(3);

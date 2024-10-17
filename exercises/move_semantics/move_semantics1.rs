@@ -3,6 +3,7 @@
 // Execute `rustlings hint move_semantics1` or use the `hint` watch subcommand
 // for a hint.
 
+// DONE
 
 fn main() {
     let vec0 = Vec::new();

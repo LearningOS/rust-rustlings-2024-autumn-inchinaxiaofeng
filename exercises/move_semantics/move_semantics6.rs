@@ -5,6 +5,7 @@
 // Execute `rustlings hint move_semantics6` or use the `hint` watch subcommand
 // for a hint.
 
+// DONE
 
 fn main() {
     let data = "Rust is great!".to_string();

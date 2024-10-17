@@ -5,14 +5,18 @@
 // Execute `rustlings hint structs1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
+// Define Struct: 
 struct ColorClassicStruct {
-    // TODO: Something goes here
+    red: u8,
+    green: u8,
+    blue: u8
 }
 
-struct ColorTupleStruct(/* TODO: Something goes here */);
+// Define Tuple Struct: 
+// 不关心其中的名字，但是又希望有一个整体名字时有用
+struct ColorTupleStruct(u8,u8,u8);
 
+// 使用derive派生实现，需要使用这个东西，才能用println!("{:?}", s);
 #[derive(Debug)]
 struct UnitLikeStruct;
 
@@ -22,8 +26,11 @@ mod tests {
 
     #[test]
     fn classic_c_structs() {
-        // TODO: Instantiate a classic c struct!
-        // let green =
+        let green = ColorClassicStruct {
+            red: 0,
+            green: 255,
+            blue: 0
+        };
 
         assert_eq!(green.red, 0);
         assert_eq!(green.green, 255);
@@ -32,8 +39,7 @@ mod tests {
 
     #[test]
     fn tuple_structs() {
-        // TODO: Instantiate a tuple struct!
-        // let green =
+        let green = ColorTupleStruct(0,255,0);
 
         assert_eq!(green.0, 0);
         assert_eq!(green.1, 255);
@@ -42,8 +48,7 @@ mod tests {
 
     #[test]
     fn unit_structs() {
-        // TODO: Instantiate a unit-like struct!
-        // let unit_like_struct =
+        let unit_like_struct = UnitLikeStruct;
         let message = format!("{:?}s are fun!", unit_like_struct);
 
         assert_eq!(message, "UnitLikeStructs are fun!");

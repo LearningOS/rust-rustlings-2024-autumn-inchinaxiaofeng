@@ -13,6 +13,7 @@
 // Execute `rustlings hint intro1` or use the `hint` watch subcommand for a
 // hint.
 
+// DONE
 
 fn main() {
     println!("Hello and");
