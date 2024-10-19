@@ -8,7 +8,7 @@
 // hint.
 
 mod delicious_snacks {
-    // TODO: Fix these use statements
+    // NOTE: Fix these use statements
     pub use self::fruits::PEAR as fruit;
     pub use self::veggies::CUCUMBER as veggie;
 

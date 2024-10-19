@@ -28,7 +28,7 @@
 ///
 /// The `address` must contain a mutable reference to a valid `u32` value.
 unsafe fn modify_by_address(address: usize) {
-    // TODO: Fill your safety notice of the code block below to match your
+    // NOTE: Fill your safety notice of the code block below to match your
     // code's behavior and the contract of this function. You may use the
     // comment of the test below as your format reference.
     unsafe {
