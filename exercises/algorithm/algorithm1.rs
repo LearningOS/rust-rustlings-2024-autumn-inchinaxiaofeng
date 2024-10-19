@@ -2,8 +2,6 @@
     single linked list merge
     This problem requires you to merge two ordered singly linked lists into one ordered singly linked list
 */
-// I AM NOT DONE
-
 use std::fmt::{self, Display, Formatter};
 use std::ptr::NonNull;
 use std::vec::*;
@@ -92,7 +90,7 @@ impl<T> LinkedList<T> {
                     merged_list.add(a_val);
                     a = unsafe { (*a_ptr.as_ptr()).next };
                 }
-                (Some(b_ptr), None) => {
+                (None, Some(b_ptr)) => {
                     let b_val = unsafe { b_ptr.as_ref().val.clone() };
                     merged_list.add(b_val);
                     b = unsafe { (*b_ptr.as_ptr()).next };
